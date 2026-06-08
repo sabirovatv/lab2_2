@@ -70,8 +70,6 @@ git push origin main
 ```
 [main 781e958] hello_world bad code 1 file changed, 8 insertions(+) create mode 100644 hello_world.cpp
 ```
-Логика изменена: теперь программа через `stdin` считывает имя и печатает `Hello world from @name`. Повторно выполнять `git add` не требуется, так как файл уже находится под версионным контролем (команда add нужна только для впервые добавленных файлов).
-Тем не менее, для надёжности выполнена та же команда:
 ```
 git add hello_world.cpp
 git commit -m "feat: request name from stdin, print Hello world from @name"
